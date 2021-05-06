@@ -1,0 +1,227 @@
+body{
+    text-align:center;
+    --webkit--background-size:cover;
+    background-size:cover;  
+    animation: transition 20s ease-in-out infinite both;
+}
+
+
+.entete{
+    overflow: hidden;
+    position: relative;
+    left: 100px;
+    right: 100px;
+    width: 100%;
+    top:0px;
+    height: 90px;
+    background-size: cover;
+    background-color: rgb(180 204 218 / 57%); /*le background transparent */
+    position: -webkit-sticky; /* la ca marche: le deplacement de la barre*/
+    position: sticky;
+    top: 0px; /*idk yet*/
+    margin-top: 0%;
+}
+
+
+/*ca donne une couleure blanche lorsqu'on place le curseur*/
+/*header:hover{
+    background:rgb(240, 237, 237); 
+}*/
+
+.txt{
+    position: relative;
+    left: 10px;
+    right: 10px;
+    top: 120px;
+    bottom: 10px;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+}
+
+.titre{
+    font-size:50px;
+}  
+
+.subtitle{
+    font-size:25px;
+}
+
+.intro{
+    color:whitesmoke;
+}
+
+
+.logo{
+    margin: 0 0 -10px;
+    float:left;
+}
+
+/*3 1eres lignes pour garder la barre meme à la descente: ca marche pas*/
+.navigation{
+    /*background:rgba(0, 0, 0, 0.1);*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px; /*idk yet*/
+    float:right;
+    list-style: none; /*le style des liste *** ou --- ici rien*/
+    margin-top:20px; /* distance to the top*/
+}
+
+.navigation a:hover {
+    background-color: #ddd;
+    color: rgb(255, 255, 255);
+}
+
+/*pour faire le blanc quand on place le curseur*/
+.navigation li:hover{
+    background: #fff;
+    color:#333;
+}
+
+/* pour qu'ils soient allignés à l horizontal */
+.navigation li { 
+    display: inline-block;
+    font-weight: bold;   
+}
+
+/*param de grandeur, largeur, espacement*/
+.navigation li a{
+    color:rgb(24, 23, 23);
+    text-decoration :none;
+    font-family: Courier New;
+    padding : 5px 10px;
+    font-family: emoji;
+    font-size:20px;
+    font-weight: bold;
+}
+
+@keyframes transition{
+    0%{background-image: url("https://escaledenuit.com/wp-content/uploads/2015/04/image36.jpg");}
+    40%{background-image: url("https://cdn.pixabay.com/photo/2017/02/21/18/29/airplane-view-2086979_960_720.jpg");}
+    100%{background-image: url("http://lilasjade.l.i.pic.centerblog.net/o/23fd4c24.jpg");}
+}
+
+.container2 {
+    width: 65%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(202, 231, 248, 0.575);
+}
+
+hr.divider {
+    max-width: 3.25rem;
+    border-width: 0.2rem;
+    border-color: #3ab3f4;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+    }
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card > hr {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.alert-primary hr {
+    border-top-color: #fbc0b0;
+  }
+  .alert-info hr {
+    border-top-color: #abdde5;
+}
+
+
+
+/*
+pour le search.html: le tableau gris
+*/
+
+.login-box {
+    position: relative;
+    left: 350px;
+    right: 10px;
+    top: 150px;
+    bottom: 1000px;
+    width: 38%;
+    height:  420px;
+    background-size: cover;
+    background-color: rgba(202, 231, 248, 0.575);
+}
+
+.search-box-title{
+    position: relative;
+    left: 10px;
+    right: 10px;
+    top: 15px;
+    bottom: 100px;
+}
+
+/* this for the search.js & search.html */
+.template{
+    background-color: rgba(203, 232, 248, 0.575);
+    color : red;
+    border: 2px solid red;  
+}
+#result{
+    background-color: #ffffff;
+}
+
+.flights-box{
+    position: relative;
+    left: 350px;
+    right: 10px;
+    top: 150px;
+    bottom: 1000px;
+    width: 38%;
+    height: 650px;
+    background-size: cover;
+    background-color: rgba(202, 231, 248, 0.575);
+}
+
+/* this for reservation.html */
+
+
+.h5_res{
+    font-size: 25px;
+    color: #020005;
+    border-bottom: 3px solid #1e3155;
+    margin-bottom: 0em;
+    margin-top: 1em;
+}
+
+.flightL_loc{
+    text-align: center;
+}
+
+.flightL_loc > i{
+    color: #1e3155;
+    text-align: right;
+}
+
+.flightL_div1{
+    display: grid;
+    grid-template-columns: 30.33% 30.33% 30.33%;
+    padding:1em;
+}
